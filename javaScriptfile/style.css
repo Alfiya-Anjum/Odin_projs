@@ -1,0 +1,50 @@
+.rock {
+    background-color: #338eac;
+    border: 2px solid #333;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.paper {
+    background-color: #f0c040;
+    border: 2px solid #333;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.scissors {
+    background-color: #d9534f;
+    border: 2px solid #333;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}   
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.score {
+    font-weight: bold;
+}
+
+.reset {
+    background-color: #5cb85c;
+    border: 2px solid #333;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}

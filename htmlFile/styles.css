@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f0f0;
+}
+
+.header-container {
+    background-color: #0a2c52;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* distributes logo left, nav right */
+    align-items: center;
+}
+
+
+#header-id {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.nav-list {
+    gap: 50px; /* space between nav items */
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: right;
+     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* allow items to wrap on smaller screens */
+    justify-content: flex-end;
+}
+
+
+
+.header-text {
+    text-align: left;
+    margin-top: 20px;
+    color: #e7eaed;
+    flex: 1;
+}
+
+.welcome{
+    background-color: #0a2c52;
+    color: white;
+    padding: 120px;
+    text-align: center;
+}
+
+.welcome-container{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+
+.cta-button {
+    background-color: #6092ca;
+    color: rgb(200, 210, 214);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header-image {
+    flex: 1;
+       justify-content: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Limit the maximum width */
+    border-radius: 10px; /* Optional: add some border radius */
+    margin-top: 20px; /* Add some space above the image */
+}
+
+.random {
+    color: #0c0d0d;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+    padding: 50px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap; /* allow items to wrap on smaller screens */
+  padding-bottom: 140px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  border: 4px solid rgb(116, 187, 211);
+  gap: 100px;
+  border-radius: 40px;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border-radius: 40px;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.myself {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 50px;
+    color: #1c1d1d;
+    background-color: #E5E7EB
+}
+
+.other-container {
+    text-align: center;
+    margin: 40px auto;              /* Adds vertical spacing & centers it */
+    max-width: 900px;               /* Controls the width */
+    padding: 30px;
+    font-size: 20px;
+    color: #eef1f1;
+    background-color: #285cc4;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+}
+
+.footer {
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+    color: #1c1d1d;
+    background-color: #E5E7EB;
+    position: relative;
+}
+

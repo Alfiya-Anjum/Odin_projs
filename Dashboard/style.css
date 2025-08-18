@@ -1,0 +1,241 @@
+:root {
+  --primary-color: #1e90ff; /* blue */
+  --secondary-color: white; /* light gray */
+  --text-color: #333; /* dark gray */
+  --content-color: 	#D3D3D3; /* light background for content */
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  width: 300px;
+  height:100%;     /* always fill screen height */
+  position: sticky;   /* stays in place when scrolling */
+  top: 0;             /* required for sticky */
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+    background-color: var(--secondary-color);
+    padding-left: 90px;
+
+}
+
+
+.dash {
+font: roboto;
+  font-size: 30px;
+    color: var(--secoundary-color);
+    display: flex;
+    align-items: center;
+}
+
+.dash img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; /* space between icon and text */
+}
+
+
+.side {
+  display: flex;              /* icon & text side-by-side */
+  align-items: center;        /* vertically aligned */
+  gap: 10px;                  /* space between icon and text */
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.side i {
+  font-size: 18px; /* icon size */
+}
+
+
+.side:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.otherside {
+    font-size: 1em;
+    padding-top: 50px;
+}
+
+.text-box {
+    font-size: 1.2em;
+    color: var(--text-color);
+    background-color: rgb(238, 235, 235);
+    border-radius: 30px;
+    height: 40px;
+    width: 300px;
+    
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: 1fr auto; /* left grows, right fits */
+  align-items: center; /* vertical centering */
+  background-color: var(--secondary-color);
+  padding: 20px;
+  gap: 20px; /* space between left and right */
+  z-index: 1;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px;      /* space between avatar, name, and icon */
+  padding: 20px;
+}
+
+.user img {
+  width: 45px;   /* bigger profile picture */
+  height: 45px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 2em; /* bigger text */
+  font-weight: bold;
+}
+
+.user i {
+  margin-left: 20px; /* extra space before bell icon */
+  font-size: 1.5em;  /* bigger bell icon */
+}
+
+.moreabout {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between profile picture and text */
+  padding: 20px;
+}
+
+.moreabout img {
+  width: 80px; /* larger profile picture */
+  height: 80px;
+  border-radius: 50%;
+}
+
+.moreinfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.button {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 20px 40px;
+  gap: 70px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.buttons {
+  display: flex;      /* makes gap work */
+  gap: 30px;          /* space between buttons */
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left bigger, right smaller */
+  gap: 20px;
+  margin-top: 20px;
+  background-color: #E6ECF5;
+  height: 100vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--secondary-color);
+   flex: 1; /* allow cards to grow equally */
+  margin: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: var(--primary-color) 0px 0px 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.side-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.item {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+  border-bottom: none; /* remove line after last item */
+}
+
+.cardos {
+  background-color: var(--secondary-color);
+  flex: 1;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: var(--primary-color) 0px 0px 10px;
+  max-width: 300px;
+}
+
+.trend-item {
+  display: flex;
+  align-items: center; /* vertically center image and text */
+  margin-bottom: 10px;
+}
+
+.trend-item:last-child {
+  margin-bottom: 0; /* remove gap after last item */
+}
+
+.cardos img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.item {
+  flex: 1; /* let text take remaining space */
+}
+

@@ -1,0 +1,80 @@
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.projects {
+  background: none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+  padding: 0 5px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: stretch; 
+  gap: 50px; 
+  padding: 20px; 
+  background-color: #EEF2F8; 
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  flex: 1; /* allow cards to grow equally */
+  margin: 10px;
+  
+  box-shadow: var(--primary-color) 0px 0px 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  padding: 16px;
+  text-align: center;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+
+.side-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between items */
+}
+
+.side-container div {
+   box-shadow: var(--primary-color) 0px 0px 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  padding: 16px;
+  text-align: center;
+  color: var(--text-color);
+  height: 80px;
+  flex: 1 1 auto;
+  display: flex;
+}
