@@ -64,8 +64,27 @@ button {
 .card {
   background-color: rgb(195, 224, 222);
   border: 1px solid black;
+  font-size: 3em;              /* make X and O big */
+  display: flex;               /* use flexbox */
+  align-items: center;         /* center vertically */
+  justify-content: center;     /* center horizontally */
+  cursor: pointer;             /* pointer cursor on hover */
+}
+.card:hover {
+  background-color: rgb(173, 216, 230); /* light blue on hover */
 }
 
 .grid-container, .result {
   display: none; /* hide at the start */
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
 }
