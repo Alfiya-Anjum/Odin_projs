@@ -30,7 +30,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-header {
+.header1 {
   background-image: url("./main-steak.jpg");
   background-size: cover;   /* make it cover the area */
   background-position: center; /* center it */
@@ -132,3 +132,78 @@ button#orderBtn:focus {
     padding: 20px;
 }
 
+footer {
+  background-color: #001a0c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.menu-item {
+  background-color: rgba(23, 60, 41, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.4); /* shading */
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-card:hover .card-overlay {
+  opacity: 1;
+}

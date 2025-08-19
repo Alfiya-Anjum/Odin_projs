@@ -1,30 +1,24 @@
-import loadHome from "./home";
-import loadMenu from "./menu";
-import loadContact from "./contact";
-import "./style.css";
+import loadHome from "./home.js";
+import loadMenu from "./menu.js";
+import loadContact from "./contact.js";
 
+function addNavEvents() {
+  document.getElementById("homeBtn").addEventListener("click", () => {
+    loadHome();
+    addNavEvents(); // re-attach events after reload
+  });
 
-const content = document.getElementById("content");
+  document.getElementById("menuBtn").addEventListener("click", () => {
+    loadMenu();
+    addNavEvents();
+  });
 
-function clearContent() {
-  content.innerHTML = "";
+  document.getElementById("contactBtn").addEventListener("click", () => {
+    loadContact();
+    addNavEvents();
+  });
 }
 
-// Default load = Home page
+// Load homepage first
 loadHome();
-
-// Event listeners for nav buttons
-document.getElementById("homeBtn").addEventListener("click", () => {
-  clearContent();
-  loadHome();
-});
-
-document.getElementById("menuBtn").addEventListener("click", () => {
-  clearContent();
-  loadMenu();
-});
-
-document.getElementById("contactBtn").addEventListener("click", () => {
-  clearContent();
-  loadContact();
-});
+addNavEvents();
