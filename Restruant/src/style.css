@@ -207,3 +207,14 @@ footer {
 .menu-card:hover .card-overlay {
   opacity: 1;
 }
+
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(23, 60, 41, 0.8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
