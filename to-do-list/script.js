@@ -47,6 +47,13 @@ function renderTodo(text) {
   li.appendChild(span);
   list.appendChild(li);
 }
+function myFunction() {
+  // find the dropdown content
+  const dropdown = document.getElementById("myDropdown");
+
+  // toggle the "show" class (adds it if missing, removes it if already there)
+  dropdown.classList.toggle("show");
+}
 
 
 // 🟢 load existing todos when page opens
