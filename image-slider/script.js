@@ -37,6 +37,7 @@ function prevSlide() {
     intervalID = setInterval(nextSlide, 5000); // restart auto play
 }
 
+
 function nextSlide() {
     clearInterval(intervalID);
     showSlide(slideIndex + 1);
