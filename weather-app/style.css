@@ -1,108 +1,110 @@
+/* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
+/* Centered card */
 .weatherForm {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Set the background color to be transparent */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
-    margin-top: 105px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.weatherForm:hover {
+  transform: scale(1.02);
 }
 
 h1 {
-    font-size: 24px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
+/* Input + Button */
 input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 0px 6px rgba(0, 91, 187, 0.5);
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-
-.weather-info {
-    text-align: center;
-
-    margin-top: 20px;
-}
-
-.weather-info p {
-    margin: 5px 0;
-}
-.weather-icon {
-    width: 100px;
-    height: 100px;
-}
-
-.errorDisplay {
-    color: red;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
+/* Weather card */
 #weather-info {
-    background: #f4f7fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    padding: 20px 28px;
-    margin-top: 10px;
-    text-align: center;
-    min-width: 220px;
-    animation: fadeIn 0.6s;
-}
-
-#weather-info h2 {
-    margin: 0 0 10px 0;
-    color: #0a2c52;
-    font-size: 1.3rem;
-}
-
-#temperature {
-    font-size: 2.2rem;
-    color: #174a7c;
-    margin: 0 0 8px 0;
-    font-weight: bold;
-}
-
-#description {
-    font-size: 1.1rem;
-    color: #555;
-    margin: 0;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px);}
-    to { opacity: 1; transform: translateY(0);}
+  margin-top: 20px;
+  display: none; /* stays hidden until JS shows it */
+  flex-direction: column;
+  align-items: center;
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cityDisplay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .tempDisplay {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 18px;
+  color: #ff4500;
+}
+
+.humidityDisplay {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.descDisplay {
+  font-size: 16px;
+  margin: 8px 0;
+  font-style: italic;
+}
+
+.weatherEmogi {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* Error styling */
+.errorDisplay {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
 }
