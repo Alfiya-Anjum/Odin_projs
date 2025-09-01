@@ -7,7 +7,7 @@ function fibs(n) {
   }
   return result.slice(0, n);
 }
-
+// Iterative
 function fibs(n) {
     let result = [0, 1];
     for (let i = 2; i< n; i++) {

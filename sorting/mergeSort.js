@@ -9,7 +9,6 @@ function mergeSort(arr) {
 
   return merge(left, right);
 }
-
  // Helper function to merge two sorted arrays
 function merge(left, right) {
   let result = [];
