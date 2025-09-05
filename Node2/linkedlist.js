@@ -178,3 +178,12 @@ prepend(value){
   head() {
     return this.headNode;
   }
+
+  tail() {
+    if (!this.headNode) return null;
+    let current = this.headNode;
+    while (current.nextNode) {
+      current = current.nextNode;
+    }
+    return current;
+  }
