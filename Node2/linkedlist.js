@@ -174,3 +174,7 @@ prepend(value){
     }
     return count;
   } 
+
+  head() {
+    return this.headNode;
+  }
